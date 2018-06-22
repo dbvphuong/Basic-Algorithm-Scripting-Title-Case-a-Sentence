@@ -49,3 +49,14 @@ function truncateString(str, num) {
 }
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
 ```
+# Basic Algorithm Scripting: Where do I Belong  
+```
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+arr.push(num); // thêm num vào mảng arr
+arr.sort(function(x,y){return x-y}); // sắp xếp thứ tự của mảng arr
+var a = arr.indexOf(num); //xác định vị trí của num trong mảng arr
+  return a;
+}
+getIndexToIns([40, 60], 50);
+```
