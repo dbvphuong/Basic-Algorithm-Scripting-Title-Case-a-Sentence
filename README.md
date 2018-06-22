@@ -25,7 +25,7 @@ for(var i=0 ; i<num ; i++){
 repeatStringNumTimes("abc", 3);
 ```
 
-# dbvphuong-Basic-Algorithm-Scripting-Confirm-the-Ending
+# Basic-Algorithm-Scripting-Confirm-the-Ending
 ```
 function confirmEnding(str, target) {
 
@@ -37,7 +37,7 @@ var d= c==b;
 }
 confirmEnding("Bastian", "n");
 ```
-# Basic-Algorithm-Scripting-Truncate-a-String
+# Truncate-a-String
 ```
 function truncateString(str, num) {
   // Clear out that junk in your trunk
@@ -49,7 +49,7 @@ function truncateString(str, num) {
 }
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
 ```
-# Basic Algorithm Scripting: Where do I Belong  
+#  Where do I Belong  
 ```
 function getIndexToIns(arr, num) {
   // Find my place in this sorted array.
@@ -60,7 +60,7 @@ var a = arr.indexOf(num); //xác định vị trí của num trong mảng arr
 }
 getIndexToIns([40, 60], 50);
 ```
-# Basic Algorithm Scripting: Mutations
+#  Mutations
 ```
 function mutation(arr) {
 var a= arr[0].toLowerCase().split(""); // ["h", "e", "l", "l", "o"]
@@ -73,4 +73,16 @@ var c= Boolean(b.indexOf(-1)==-1); // tìm kiếm xem -1 có trong b không, n�
   return c;
 }
 mutation(["hello", "hey"]);
+```
+# Chunky Monkey  
+```
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+var text = [];
+  for(var i=0 ; i < arr.length ; i += size){
+    text.push(arr.slice(i , i + size));
+}
+  return text;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
