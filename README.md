@@ -60,3 +60,17 @@ var a = arr.indexOf(num); //xác định vị trí của num trong mảng arr
 }
 getIndexToIns([40, 60], 50);
 ```
+# Basic Algorithm Scripting: Mutations
+```
+function mutation(arr) {
+var a= arr[0].toLowerCase().split(""); // ["h", "e", "l", "l", "o"]
+var b= arr[1].toLowerCase().split(""); // ["h","e","y"]
+
+for(var i =0; i < b.length; i++){
+  b[i] = a.indexOf(b[i])// [0,1,-1]
+}
+var c= Boolean(b.indexOf(-1)==-1); // tìm kiếm xem -1 có trong b không, nếu có thì là false
+  return c;
+}
+mutation(["hello", "hey"]);
+```
