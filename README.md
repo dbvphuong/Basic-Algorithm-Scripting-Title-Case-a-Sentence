@@ -12,7 +12,7 @@ function titleCase(str) {
  titleCase("I'm a little tea pot");
 ```
 
-# Basic-Algorithm-Scripting-Repeat-a-String-Repeat-a-String
+# Repeat-a-String-Repeat-a-String
 ```
 function repeatStringNumTimes(str, num) {
   var text="";
@@ -25,7 +25,7 @@ for(var i=0 ; i<num ; i++){
 repeatStringNumTimes("abc", 3);
 ```
 
-# Basic-Algorithm-Scripting-Confirm-the-Ending
+# Confirm-the-Ending
 ```
 function confirmEnding(str, target) {
 
