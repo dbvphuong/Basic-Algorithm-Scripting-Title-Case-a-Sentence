@@ -86,3 +86,17 @@ var text = [];
 }
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
+# Falsy Bouncer  
+```
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+var text = [];
+for(var i = 0; i < arr.length; i++){
+  if(Boolean(arr[i++]) == true){text += arr[i] + " ";}}
+text.split(" ");
+text.splice(text.length -1,text.length);
+  return text;
+}
+
+bouncer([7, "ate", "", false, 9]);
+```
