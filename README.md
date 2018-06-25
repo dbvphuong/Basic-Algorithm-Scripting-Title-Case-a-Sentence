@@ -98,3 +98,13 @@ bouncer([7, "ate", "", false, 9]);
 Cú pháp filter:  
 var a = tên_array.filter(function (giatri) {điều kiện của giatri} );  
 <=> var a = tên_array.filter(giatri => {điều kiện của giatri});  
+# Finders Keepers  
+```
+function findElement(arr, func) {
+var a = arr.filter(func);
+var b = Number(a.splice(0,1));
+if(a.length == 0){return undefined};
+return b;
+}
+findElement([1, 2, 3, 4], num => num % 2 === 0);
+```
