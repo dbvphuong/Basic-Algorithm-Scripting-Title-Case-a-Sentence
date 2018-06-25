@@ -90,13 +90,11 @@ chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-var text = [];
-for(var i = 0; i < arr.length; i++){
-  if(Boolean(arr[i++]) == true){text += arr[i] + " ";}}
-text.split(" ");
-text.splice(text.length -1,text.length);
-  return text;
+var text = arr.filter(function(giatri){return Boolean(giatri) == true});
+return text;
 }
-
 bouncer([7, "ate", "", false, 9]);
 ```
+Cú pháp filter:  
+var a = tên_array.filter(function (giatri) {điều kiện của giatri} );  
+<=> var a = tên_array.filter(giatri => {điều kiện của giatri});  
